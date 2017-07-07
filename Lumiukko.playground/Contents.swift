@@ -99,7 +99,7 @@ PlaygroundPage.current.liveView = view
 
  Ohjeet noiden kirjoittamiseen löytyvät `Help`-valikosta
  löytyvästä dokumentaatiosta, sekä osoitteesta
- [https://developer.apple.com/library/content/documentation/Swift/Reference/Playground_Ref/Chapters/MarkupReference.html](https://developer.apple.com/library/content/documentation/Swift/Reference/Playground_Ref/Chapters/MarkupReference.html)*/
+ [https://developer.apple.com/library/content/documentation/Xcode/Reference/xcode_markup_formatting_ref/index.html#//apple_ref/doc/uid/TP40016497-CH2-SW1](https://developer.apple.com/library/content/documentation/Xcode/Reference/xcode_markup_formatting_ref/index.html#//apple_ref/doc/uid/TP40016497-CH2-SW1)*/
 /// Aliohjelma piirtää lumiukon
 /// annettuun paikkaan.
 ///
@@ -115,7 +115,8 @@ func piirräLumiukko(level:SKScene, x:CGFloat, y:CGFloat) {
     var pallonY = y
     let p1 = SKShapeNode(circleOfRadius: 2 * 50.0)
 //: Pallolle annetaan valkea väri ja se sijoitetaan parametrien mukaiseen paikkaan.
-    p1.fillColor = #colorLiteral(red: 1, green: 0.99997437, blue: 0.9999912977, alpha: 1)
+    p1.fillColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
+    p1.strokeColor = #colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)
     p1.position = CGPoint(x: x, y: pallonY)
 //: Ja sitten taas lisätehtävä: Jos haluat pallon tottelevan fysiikkamoottoria, pitää sille luoda oma fysiikkakappale sekä kertoa pallon massa.  Yksikön saat päättää itse.
     // p1.physicsBody = SKPhysicsBody(circleOfRadius: 2*50.0)
